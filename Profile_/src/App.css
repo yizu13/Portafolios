@@ -5,18 +5,6 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 .head{
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   width: 100%;
@@ -25,33 +13,121 @@
   background-color: #242424;
   top:0;
   left:0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
 }
 
-.list{
-  display:flex;
-  width: 500px;
-  height: 500px;
+.headBase{
+  width: 100%;
+  height: 20%;
+  position: fixed;
+  background-color: #242424;
+  top:0;
+  left:0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+#name {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  white-space: nowrap; 
+  overflow: hidden;  
+  padding: 1em;
+  background: linear-gradient(157deg,#f19331,#108d8d,#00617a);
+  background-size: 180% 180%;
+  animation: gradient-animation 12s ease infinite;
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  cursor:default;
+}
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.mainLogo{
+  width: auto; 
+  max-width: 10%; 
+  height: auto;
+  max-height: 80%; 
+  padding: 1em;
+  object-fit: contain; 
 }
 
-.card {
-  padding: 2em;
+.mainFoto{
+  display: flex;
+  width: 8vw; 
+  max-width: 10%; 
+  height: 10vw;
+  max-height: 80%; 
+  padding: 1em;
+  margin-right: 1em;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto 1em;
 }
 
-.read-the-docs {
-  color: #888;
+#section1{
+  position:inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70em;
+  height: 50em;  
+  margin-top: 25em;
+  padding-bottom: 10em;
 }
+
+.cardTitle{
+  position: relative;
+  top: -0.5em;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  white-space: nowrap; 
+  transition: all 0.3s ease;
+}
+
+.cardTitleInfo{
+  position: relative;
+  top: -5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  white-space: nowrap; 
+  transition: all 0.3s ease;
+}
+
+.backgroundDes {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  border-radius: 0 0 10px 10px;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.backgroundDes.hidden {
+  height: 0;
+  transition: 0.1s ease;
+}
+
