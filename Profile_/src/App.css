@@ -8,7 +8,7 @@
 .head{
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: 20%;
+  height: 15%;
   position: fixed;
   background-color: #242424;
   top:0;
@@ -20,7 +20,7 @@
 
 .headBase{
   width: 100%;
-  height: 20%;
+  height: 15%;
   position: fixed;
   background-color: #242424;
   top:0;
@@ -36,7 +36,7 @@
   margin-top: 1.5em;
   white-space: nowrap; 
   overflow: hidden;  
-  padding: 1em;
+  padding: 0.5em;
   background: linear-gradient(157deg,#f19331,#108d8d,#00617a);
   background-size: 180% 180%;
   animation: gradient-animation 12s ease infinite;
@@ -69,15 +69,26 @@
 
 .mainFoto{
   display: flex;
-  width: 8vw; 
+  width: 6vw; 
   max-width: 10%; 
-  height: 10vw;
+  height: 6vw;
   max-height: 80%; 
   padding: 1em;
   margin-right: 1em;
   border-radius: 50%;
   object-fit: cover;
   margin: auto 1em;
+}
+
+#section0{
+  position:inherit;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 70em;
+  height: 50em;  
+  margin-top: -25rem;
+  padding-bottom: 10em;
 }
 
 #section1{
@@ -89,45 +100,108 @@
   flex-wrap: wrap;
   width: 70em;
   height: 50em;  
-  margin-top: 25em;
+  margin-top: 80rem;
   padding-bottom: 10em;
+}
+
+#section2{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70em;
+  height: 50em;  
+  margin-top: 10em;
+  padding-bottom: 10em;
+}
+
+#section3{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70em;
+  height: 5em;  
+  margin-top: 70em;
+  
 }
 
 .cardTitle{
   position: relative;
+  color: #f5a627 ;
   top: -0.5em;
   font-size: 2.5em;
   font-weight: bold;
   margin-top: 1.5em;
   white-space: nowrap; 
   transition: all 0.3s ease;
+  cursor: default;
 }
 
 .cardTitleInfo{
   position: relative;
+  color: #f5a627 ;
   top: -5em;
   font-size: 1.5em;
   font-weight: bold;
   margin-top: 1.5em;
   white-space: nowrap; 
   transition: all 0.3s ease;
+  cursor: default;
 }
 
 .backgroundDes {
   position: absolute;
+  display: flex;
+  justify-content: center;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 0;
   border-radius: 0 0 10px 10px;
   transition: 0.3s ease;
-  overflow: hidden;
+}
+
+#description{
+  font-size: 1em; 
+  text-align: center; 
+  line-height: 1.5; 
+  white-space: normal; 
+  word-wrap: break-word;
+  width: 90%;
+  height: 80%;
 }
 
 .backgroundDes.hidden {
   height: 0;
   transition: 0.1s ease;
+}
+
+.iconButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4%;
+  height: 50%;
+  border-radius: 60px;
+  border: transparent;
+  background-color: transparent;
+}
+
+.iconButton:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4%;
+  height: 50%;
+  border-radius: 60px;
+  border: #3d3d3d;
+  background-color: #3d3d3d;
+  cursor: pointer;
 }
 
