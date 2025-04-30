@@ -52,7 +52,7 @@ function App() {
       <h1 id='name'>Jesús Alexander Hernández de los Santos</h1>
       <img src="fotos/minume_foto.jpg" className='mainFoto'/>
       </div>
-      <div>
+      <div id="main">
       <div id="section0">
       <m.div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap",
               backgroundColor: "black", 
