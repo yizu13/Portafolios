@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, use } from 'react'
+import { useEffect, useState } from 'react'
 import { useScroll } from 'framer-motion'
 import * as m from "motion/react-client"
 import { Icon } from "@iconify/react";
@@ -64,7 +64,7 @@ function App() {
 
               <p  id='cardTitle' className={quienSoy? 'cardTitleInfo' :'cardTitle'}>{'¿Quién soy?'}</p>
               <label id='backDescription' className={quienSoy? 'backgroundDes' : 'backgroundDes hidden'}>
-                <p id="description">{'Soy un joven de 19 años que le encanta jugar, es una persona que cumple todo lo que se propone con disciplina y constancia. Estoy estudiando Ciencias de la Computación, con un enfoque en el desarrollo de software. Tengo dos hermanos Melissa y José Ángel, son los mejores que una persona puede tener.'}</p>
+                <p id="description">{'Soy un joven de 19 años que vive en República Dominicana. Es una persona que cumple todo lo que se propone con disciplina y constancia. Estoy estudiando Ciencias de la Computación, con un enfoque en el desarrollo de software. Tengo dos hermanos Melissa y José Ángel, son los mejores que una persona puede tener.'}</p>
               </label>
             </m.div>
             </div>

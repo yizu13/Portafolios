@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "preview",
+			"path": "Profile_",
+			"problemMatcher": [],
+			"label": "npm: preview - Profile_",
+			"detail": "vite preview"
+		}
+	]
+}
